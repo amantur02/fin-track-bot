@@ -3,3 +3,8 @@ venv/
 .idea/
 /docker-compose.yml
 /.env
+
+__pycache__
+app.egg-info
+.idea/*
+!/.idea/runConfigurations/
