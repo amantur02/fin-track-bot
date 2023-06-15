@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Boolean
 from sqlalchemy.sql import expression
 
-from db_base_class import Base
+from db.db_base_class import Base
 
 
 class UserDB(Base):

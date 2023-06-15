@@ -1,10 +1,10 @@
 from aiogram import executor
-from bot import dp
-from db_models import Base
-from config import DB_URL
+from bot.bot import dp
+from db.db_models import Base
+from config import settings
 from sqlalchemy import create_engine
 
-engine = create_engine(DB_URL)
+engine = create_engine(settings.postgres_url)
 Base.metadata.create_all(bind=engine)
 
 if __name__ == '__main__':

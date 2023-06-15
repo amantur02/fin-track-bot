@@ -3,6 +3,10 @@ from typing import List, Optional
 from pydantic import BaseModel, EmailStr, constr, root_validator, validator
 
 
+class SuccessResponse(BaseModel):
+    message: str
+
+
 class User(BaseModel):
     id: Optional[int]
     username: Optional[str]
